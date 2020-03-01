@@ -69,6 +69,6 @@ class BurgersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def burger_params
-      params.require(:burger).permit(:name, :price, :float, :image, :nutriscore)
+      params.require(:burger).permit(:Name, :Price, :Image, :Nutriscore)
     end
 end
