@@ -10,7 +10,11 @@ class BurgersController < ApplicationController
   # GET /burgers/1
   # GET /burgers/1.json
   def show
+    # for nutriment in @burger.nutriments
+    # end
+    # p @burger.nutriments
   end
+  
 
   # GET /burgers/new
   def new
