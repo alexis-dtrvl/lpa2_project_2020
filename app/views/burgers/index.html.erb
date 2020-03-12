@@ -22,9 +22,18 @@
         <td><%= burger.Image %></td>
         <td><%= burger.Nutriscore %></td>
         <td><%= burger.code %></td>
-        <td><%= link_to 'Show', burger %></td>
-        <td><%= link_to 'Edit', edit_burger_path(burger) %></td>
-        <td><%= link_to 'Destroy', burger, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      
+        <td><button>
+          <%= link_to 'Show', burger %>
+        </button></td>
+      
+        <td><button>
+          <%= link_to 'Edit', edit_burger_path(burger) %>
+        </button></td>
+
+        <td><button>
+          <%= link_to 'Destroy', burger, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </button></td>
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +41,6 @@
 
 <br>
 
+<button>
 <%= link_to 'New Burger', new_burger_path %>
+</button>
